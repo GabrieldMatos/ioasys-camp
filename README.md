@@ -51,7 +51,7 @@ In the router folder you can look at the routes of the API
 
 /investors/id
 
-*example: localhost:3003/users //this URL with a get HTTP verb will return all users registereds*
+**example: localhost:3003/users**    *--this URL with a get HTTP verb will return all users registereds*
 
 
 
