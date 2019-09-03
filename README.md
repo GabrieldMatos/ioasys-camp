@@ -31,19 +31,24 @@ In the router folder you can look at the routes of the API
 
 #### routes
 
-/users\n
+/users
+
 /users/id
 
 /startups
+
 /startups/id
 
 /projects
+
 /projects/id
 
 /investments
+
 /investments/id
 
 /investors
+
 /investors/id
 
 *example: localhost:3003/users //this URL with a get HTTP verb will return all users registereds*
