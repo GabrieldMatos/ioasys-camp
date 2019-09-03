@@ -15,6 +15,8 @@
 
 create a database named ioasys on your postgres
 
+create a env.js file in the config folder, in this arquive u will need to set up your environment variables
+
 do
 
 *git clone https://github.com/GabrieldMatos/ioasys-camp.git && cd ioasys-camp*
