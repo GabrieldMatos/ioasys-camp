@@ -3,6 +3,8 @@
 
 ### requirements
 
-*postgres
-*node
-*yarn
+*postgres*
+
+*node*
+
+*yarn*
