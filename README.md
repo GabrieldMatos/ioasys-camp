@@ -31,7 +31,7 @@ In the router folder you can look at the routes of the API
 
 #### routes
 
-/users
+/users\n
 /users/id
 
 /startups
