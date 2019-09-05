@@ -39,7 +39,7 @@ module.exports = {
         value: params.value,
         startDate: params.startDate,
         description: params.description,
-        startupId: params.StartupId,
+        startupId: params.startupId,
       });
       res.status(200).json(response);
     } catch (error) {
