@@ -67,6 +67,11 @@ basic-auth@~2.0.0:
   dependencies:
     safe-buffer "5.1.2"
 
+bcrypt-nodejs@^0.0.3:
+  version "0.0.3"
+  resolved "http://npm.ioasys.com.br/bcrypt-nodejs/-/bcrypt-nodejs-0.0.3/c60917f26dc235661566c681061c303c2b28842b.tgz#c60917f26dc235661566c681061c303c2b28842b"
+  integrity sha1-xgkX8m3CNWYVZsaBBhwwPCsohCs=
+
 bluebird@^3.5.0, bluebird@^3.5.3:
   version "3.5.5"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.5.tgz#a8d0afd73251effbbd5fe384a77d73003c17a71f"
@@ -95,6 +100,11 @@ brace-expansion@^1.1.7:
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
+
+buffer-equal-constant-time@1.0.1:
+  version "1.0.1"
+  resolved "http://npm.ioasys.com.br/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1/f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819.tgz#f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819"
+  integrity sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk=
 
 buffer-writer@2.0.0:
   version "2.0.0"
@@ -197,6 +207,14 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
   integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
 
+cors@^2.8.5:
+  version "2.8.5"
+  resolved "http://npm.ioasys.com.br/cors/-/cors-2.8.5/eac11da51592dd86b9f06f6e7ac293b3df875d29.tgz#eac11da51592dd86b9f06f6e7ac293b3df875d29"
+  integrity sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==
+  dependencies:
+    object-assign "^4"
+    vary "^1"
+
 d@1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.1.tgz#8698095372d58dbee346ffd0c7093f99f8f9eb5a"
@@ -238,6 +256,13 @@ dottie@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/dottie/-/dottie-2.0.1.tgz#697ad9d72004db7574d21f892466a3c285893659"
   integrity sha512-ch5OQgvGDK2u8pSZeSYAQaV/lczImd7pMJ7BcEPXmnFVjy4yJIzP6CsODJUTH8mg1tyH1Z2abOiuJO3DjZ/GBw==
+
+ecdsa-sig-formatter@1.0.11:
+  version "1.0.11"
+  resolved "http://npm.ioasys.com.br/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11/ae0f0fa2d85045ef14a817daa3ce9acd0489e5bf.tgz#ae0f0fa2d85045ef14a817daa3ce9acd0489e5bf"
+  integrity sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==
+  dependencies:
+    safe-buffer "^5.0.1"
 
 editorconfig@^0.15.3:
   version "0.15.3"
@@ -515,6 +540,39 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+jsonwebtoken@^8.5.1:
+  version "8.5.1"
+  resolved "http://npm.ioasys.com.br/jsonwebtoken/-/jsonwebtoken-8.5.1/00e71e0b8df54c2121a1f26137df2280673bcc0d.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
+  integrity sha512-XjwVfRS6jTMsqYs0EsuJ4LGxXV14zQybNd4L2r0UvbVnSF9Af8x7p5MzbJ90Ioz/9TI41/hTCvznF/loiSzn8w==
+  dependencies:
+    jws "^3.2.2"
+    lodash.includes "^4.3.0"
+    lodash.isboolean "^3.0.3"
+    lodash.isinteger "^4.0.4"
+    lodash.isnumber "^3.0.3"
+    lodash.isplainobject "^4.0.6"
+    lodash.isstring "^4.0.1"
+    lodash.once "^4.0.0"
+    ms "^2.1.1"
+    semver "^5.6.0"
+
+jwa@^1.4.1:
+  version "1.4.1"
+  resolved "http://npm.ioasys.com.br/jwa/-/jwa-1.4.1/743c32985cb9e98655530d53641b66c8645b039a.tgz#743c32985cb9e98655530d53641b66c8645b039a"
+  integrity sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA==
+  dependencies:
+    buffer-equal-constant-time "1.0.1"
+    ecdsa-sig-formatter "1.0.11"
+    safe-buffer "^5.0.1"
+
+jws@^3.2.2:
+  version "3.2.2"
+  resolved "http://npm.ioasys.com.br/jws/-/jws-3.2.2/001099f3639468c9414000e99995fa52fb478304.tgz#001099f3639468c9414000e99995fa52fb478304"
+  integrity sha512-YHlZCB6lMTllWDtSPHz/ZXTsi8S00usEV6v1tjq8tOUZzw7DpSDWVXjXDre6ed1w/pd495ODpHZYSdkRTsa0HA==
+  dependencies:
+    jwa "^1.4.1"
+    safe-buffer "^5.0.1"
+
 locate-path@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e"
@@ -522,6 +580,41 @@ locate-path@^3.0.0:
   dependencies:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
+
+lodash.includes@^4.3.0:
+  version "4.3.0"
+  resolved "http://npm.ioasys.com.br/lodash.includes/-/lodash.includes-4.3.0/60bb98a87cb923c68ca1e51325483314849f553f.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
+  integrity sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8=
+
+lodash.isboolean@^3.0.3:
+  version "3.0.3"
+  resolved "http://npm.ioasys.com.br/lodash.isboolean/-/lodash.isboolean-3.0.3/6c2e171db2a257cd96802fd43b01b20d5f5870f6.tgz#6c2e171db2a257cd96802fd43b01b20d5f5870f6"
+  integrity sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=
+
+lodash.isinteger@^4.0.4:
+  version "4.0.4"
+  resolved "http://npm.ioasys.com.br/lodash.isinteger/-/lodash.isinteger-4.0.4/619c0af3d03f8b04c31f5882840b77b11cd68343.tgz#619c0af3d03f8b04c31f5882840b77b11cd68343"
+  integrity sha1-YZwK89A/iwTDH1iChAt3sRzWg0M=
+
+lodash.isnumber@^3.0.3:
+  version "3.0.3"
+  resolved "http://npm.ioasys.com.br/lodash.isnumber/-/lodash.isnumber-3.0.3/3ce76810c5928d03352301ac287317f11c0b1ffc.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
+  integrity sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w=
+
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "http://npm.ioasys.com.br/lodash.isplainobject/-/lodash.isplainobject-4.0.6/7c526a52d89b45c45cc690b88163be0497f550cb.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
+
+lodash.isstring@^4.0.1:
+  version "4.0.1"
+  resolved "http://npm.ioasys.com.br/lodash.isstring/-/lodash.isstring-4.0.1/d527dfb5456eca7cc9bb95d5daeaf88ba54a5451.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
+  integrity sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
+
+lodash.once@^4.0.0:
+  version "4.1.1"
+  resolved "http://npm.ioasys.com.br/lodash.once/-/lodash.once-4.1.1/0dd3971213c7c56df880977d504c88fb471a97ac.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
+  integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
 lodash@^4.17.11, lodash@^4.17.5:
   version "4.17.15"
@@ -663,6 +756,11 @@ nopt@~4.0.1:
   dependencies:
     abbrev "1"
     osenv "^0.1.4"
+
+object-assign@^4:
+  version "4.1.1"
+  resolved "http://npm.ioasys.com.br/object-assign/-/object-assign-4.1.1/2109adc7965887cfc05cbbd442cac8bfbb360863.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
 on-finished@~2.3.0:
   version "2.3.0"
@@ -890,6 +988,11 @@ safe-buffer@5.1.2:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
+safe-buffer@^5.0.1:
+  version "5.2.0"
+  resolved "http://npm.ioasys.com.br/safe-buffer/-/safe-buffer-5.2.0/b74daec49b1148f88c64b68d49b1e815c1f2f519.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
+  integrity sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
+
 "safer-buffer@>= 2.1.2 < 3":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
@@ -1096,7 +1199,7 @@ validator@^10.11.0:
   resolved "https://registry.yarnpkg.com/validator/-/validator-10.11.0.tgz#003108ea6e9a9874d31ccc9e5006856ccd76b228"
   integrity sha512-X/p3UZerAIsbBfN/IwahhYaBbY68EN/UQBWHtsbXGT5bfrH/p4NQzUCG1kF/rtKaNpnJ7jAu6NGTdSNtyNIXMw==
 
-vary@~1.1.2:
+vary@^1, vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
@@ -1165,3 +1268,8 @@ yargs@^13.1.0:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^13.1.1"
+
+yarn@^1.17.3:
+  version "1.17.3"
+  resolved "http://npm.ioasys.com.br/yarn/-/yarn-1.17.3/60e0b77d079eb78e753bb616f7592b51b6a9adce.tgz#60e0b77d079eb78e753bb616f7592b51b6a9adce"
+  integrity sha512-CgA8o7nRZaQvmeF/WBx2FC7f9W/0X59T2IaLYqgMo6637wfp5mMEsM3YXoJtKUspnpmDJKl/gGFhnqS+sON7hA==
