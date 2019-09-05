@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-    "start": "node index.js"
+    "start": "yarn migrate; node index.js",
+    "migrate": "node_modules/.bin/sequelize db:migrate"
   },
   "keywords": [],
   "author": "",
