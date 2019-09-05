@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const routes = require('../router');
 
 app.use(bodyParser.json());
-app.set('port',8080);
+app.set('port',process.env.PORT || 3000);
 
 Object.keys(routes).forEach(key => app.use(`/api/${key}`, routes[key]));
 
